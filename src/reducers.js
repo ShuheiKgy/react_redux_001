@@ -13,6 +13,7 @@ export function todos(state = {list: []}, action) {
                     return false;
                 }
             });
+            return Object.assign({}, state);
         default:
             return state;
     }

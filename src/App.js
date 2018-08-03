@@ -25,6 +25,7 @@ class App extends Component {
             return (
               <li key={todo}>
                 <span>{todo}</span>
+                <button onClick={() => this.props.dispatch(removeToDo(todo))}>削除</button>
               </li>
             );
           })}
